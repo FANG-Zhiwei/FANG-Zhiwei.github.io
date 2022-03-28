@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Diary</title>
+<style>
+            body {
+                margin: 0 auto;
+                width: 1200px;
+            }
+             
+            div {
+                width: 200px;
+                background: green;
+            }
+</style>
+</head>
+
+<body>
+<h1> Here is my diaries about my research, please use web search if your are interested in some issues. </h1>
+<h2> Possible key words: Matlab. </h2>
+
+
+<h2> 22.3.27 </h2>
+<p> Key words: Matlab 2018, Coalesce </p>
+<p> Descrption</p>
+<p> There would be errors like:<未定义与 'DivideBinaryOperatorNode' 类型的输入参数相对应的函数 'asin'>, if the latter function is not supported in the used package. </p>
+<p> Solution</p>
+<p> Try to add a function to explain and call the latter function inside the package<br>
+1. create asin function in the "\coalesce\symbolic\@ExpressionTree" folder<br>
+2. uncomment the INVERSE TRIGONOMETRIC OPERATIONS  parts at line 350 to use asin fuction. <br>
+in file ExpressionNode.m<br>
+3. create AsinUnaryOperatorNode.m in the "\coalesce\symbolic" folder<br>
+4. add asin part in the "\coalesce\symbolic\@ExpressionTree\char.m" file<br>
+5. add asin part in the "\coalesce\symbolic\@ExpressionTree\diff.m" file <br>
+6. add asin part in the "\coalesce\symbolic\@ExpressionTree\eval.m" file <br>
+7. add asin part in the "\coalesce\symbolic\@ExpressionTree\private\simplify_.m" file <br>
+8. small note, this package use ./ or .* everywhere instead of / or *
+</p>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
