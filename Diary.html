@@ -1,23 +1,57 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Diary</title>
-<style>
-            body {
-                margin: 0 auto;
-                width: 1200px;
-            }
-             
-            div {
-                width: 200px;
-                background: green;
-            }
-</style>
+
+	<meta charset="UTF-8">	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Zhiwei Fang is currently a senior undergraduate student in USTC and is looking for PhD opportunities worldwide">
+    <meta name="keywords" content="Zhiwei Fang, 方志伟, fangzhiwei, afjsliny, Robotics, USTC">
+    <meta name="author" content="Zhiwei Fang" />
+    
+    <link rel="stylesheet" href="w3.css">		
+
+	<style>
+			body {
+        	        margin: 0 auto;
+            	    width: 1200px;
+            	}
+	</style>
+    
+    <link rel="shortcut icon" type="image/png" href="image/head.png">
+    
+	<title>Zhiwei Fang Homepage</title>
+        
 </head>
 
-<body>
+
+
+
+
+<body class="w3-content">
+
+
+<!-- Top menu -->
+<header class="w3-bar w3-top w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24" style="font-size:35px">Zhiwei</div>
+  <div class="w3-bar-item w3-button w3-padding-24 w3-left" style="font-stretch: extra-expanded">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Research.html" class="w3-bar-item w3-button">Research</a>
+    <a href="Diary.html" class="w3-bar-item w3-button">Diary</a>
+  </div>
+</header>
+
 <h1> Here is my diaries about my research, please use web search if your are interested in some issues. </h1>
 <h2> Possible key words: Matlab. </h2>
+
+<br>
+
+
+
+<h2> 22.3.27 </h2>
+<p> Key words: Matlab 2018, Coalesce, Segemented leg robot </p>
+<p> Descrption</p>
+<p> Complete the optimization progress today. Using interp1 function to give actuation during stance phase. But the function would be quite slow. I try to generate the interp1-ed mat file ahead of time. But it didn't behaved more fast. Much worse, the quilty of optimization seems to be declined after I changed back to the original way(real time interp1). Now it can noly maintain the height a bit slower than the apex height. It can always maintain the apex height at first. I don't why it became like this yet. But the only change is that I changed the name format and how to call the existed file. Aside from that, the senior mentioned that the number of Node in ptimization may affect the quality of iotimization so I will try to change it tomorrow</p>
+</p>
+
 
 
 <h2> 22.3.27 </h2>
