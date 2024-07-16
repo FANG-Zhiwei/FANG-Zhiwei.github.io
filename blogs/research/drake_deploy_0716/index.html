@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Zhiwei Fang | blogs</title>
+  <title>Zhiwei Fang | drake deploy 0716</title>
   <meta name="description" content="Personal website of Zhiwei Fang.">
 
   <!-- Fonts and Icons -->
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/blogs/">
+  <link rel="canonical" href="/blogs/research/new/">
 
   <!-- Scripts -->
   <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
@@ -56,6 +56,7 @@
                   <a class="nav-link" href="/projects/">
                     projects
                     
+                    
                   </a>
               </li>
             
@@ -64,8 +65,6 @@
               <li class="nav-item ">
                   <a class="nav-link" href="/publications/">
                     publications
-                    
-                      
                     
                   </a>
               </li>
@@ -82,11 +81,9 @@
               <li class="nav-item navbar-active font-weight-bold">
                   <a class="nav-link" href="/blogs/">
                     blogs
-
                       <span class="sr-only">(current)</span>
-                    
                   </a>
-              </li>  
+              </li>   
             
           
             
@@ -104,125 +101,55 @@
   </progress>
 
   <!-- Content -->
-  <!--<div color> for a year's collection-->
-  <!--<li> for new paper card, <div abbr> for the short icon long <div> for paper details-->
   <div class="content">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb p-0 text-lowercase">
+    <li class="breadcrumb-item"><a href="/">home</a></li>
+    <li class="breadcrumb-item"><a href="/blogs">blogs</a></li>
+    <li class="breadcrumb-item"><a href="/blogs/research">research</a></li>
+    <li class="breadcrumb-item active">drake deploy</li>
+  </ol>
+</nav>
 
-  <h1>blogs</h1>
-  <h6>my blogs on research and life.</h6>
-
- <!--New item--> 
- <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
-  <div class="col-sm-11 p-0">
-    <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
-<div class="col-sm-1 p-0 abbr">
-  
-    
-      <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="/blogs/research/index.html">
-        research
-      </a>
-      <p>2024-07-16</p>
-  
-</div>
-<div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-  
-  <div id="new_blog_test" class="col p-0">
-    <h5 class="title mb-0"><a href="/blogs/research/drake_deploy_0716/">Drake deployment 0716.</a></h5>
-    <div class="preview">
-               
-            
-      <p>Drake deploymen for PCC motion planning.</p>
-         
-    </div>
-    
+<div class="row m-0" style="width: 100%;">
+  <div class="col-sm-12 p-0">
+    <h1>Drake deploy 0716</h1>
+    <h5 class="mb-4">This is recording the drake deployment on the office ubuntu 20.04.</h5>
   </div>
-</div>
-</div>
-</li>
-</ol>
-  </div>
-  <div class="col-sm-1 align-self-end mt-2 p-0 pr-1">
-    <h3 class="bibliography-year">2024</h3>
-  </div>
+  <!-- <div class="col-sm-2 p-0 mt-auto mb-auto">
+    <img src="/assets/img/projects/machine_translation/machine_translation.svg" alt="project thumbnail">
+  </div> -->
 </div>
 
+<div class="container-fluid p-0 text-justify">
+  <p>
+    The default python version is 3.8 in ubuntu 20.04, with a default pip version 20.02. The pip drake installation natualy requires pip version>= 20.3.
+    Upgrade pip by <code>python -m pip install --upgrade pip</code>
+  </p>
 
+  <div class="container-fluid p-0 text-justify">
+    It seems that the drake installation in python3.7 doesn't support <code>Parser.AddModelsXX</code>, but only support <code>Parser.AddModelFromFile</code>. The latter function encounter troubles when importing urdf files.
+  </div>
 
-<!--New item-->
-<div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
-    <div class="col-sm-11 p-0">
-      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
-  <div class="col-sm-1 p-0 abbr">
-    
-      
-        <a class="badge font-weight-bold primary-color-dark align-middle" style="width: 53px;" href="/blogs/life/index.html">
-          life
-        </a>
-        <p>2024-06-11</p>
-    
+  <div class="container-fluid p-0 text-justify">
+    The visualization method <code>RenderDiagram</code> is from another package <code>manipulation</code>. 
+    And the function requires the package installed in at least python>3.8, here I choose python3.10.
   </div>
-  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+  <h4>Setting env for ipynb in vscode</h4>
+  <p>
+    Set venv for the current fold for vscode: go to a python file and choose the env in the right bottom corner by click.<br>
+    Set venv for ipynb: go to the ipynb and the env in the last step is recognized in the slector.
+  </p>
     
-    <div id="new_blog_test" class="col p-0">
-      <h5 class="title mb-0"><a href="/blogs/life/240611/index.html">Bright night sky from CUHK campus.</a></h5>
-      <div class="preview">
-                 
-              
-        <p>A few pics of the bright night sky shot on my iphone during the spring and early summer.</p>
-           
-      </div>
-      
-    </div>
-  </div>
+  <h4>drake simulation and animation</h4>
+  <p> 
+    X axis -- red<br>
+    Y axis -- green<br>
+    Z aixs -- blue<br>
+  </p>
+
 </div>
-</li>
-</ol>
-    </div>
-    <div class="col-sm-1 align-self-end mt-2 p-0 pr-1">
-      <h3 class="bibliography-year">2024</h3>
-    </div>
-  </div>
-
-
-
-<!--New item-->
-<div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
-    <div class="col-sm-11 p-0">
-      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
-  <div class="col-sm-1 p-0 abbr">
-    
-      
-        <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="/blogs/research/index.html">
-          research
-        </a>
-        <p>2024-05-15</p>
-    
-  </div>
-  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-    
-    <div id="new_blog_test" class="col p-0">
-      <h5 class="title mb-0"><a href="/blogs/research/new/index.html">New blog test.</a></h5>
-      <div class="preview">
-                 
-              
-        <p>Test for new blog.</p>
-           
-      </div>
-      
-    </div>
-  </div>
-</div>
-</li>
-</ol>
-    </div>
-    <div class="col-sm-1 align-self-end mt-2 p-0 pr-1">
-      <h3 class="bibliography-year">2024</h3>
-    </div>
-  </div>
-
-
-
-
 
   </div>
 
