@@ -17,7 +17,7 @@
   <link rel="canonical" href="/blogs/research/">
 
   <!-- Scripts -->
-  <script type="text/javascript">   
+  <!-- <script type="text/javascript">   
     loopy()   
     function loopy() {   
     var sWord =""  
@@ -26,11 +26,45 @@
     }   
     alert("welcome")   
     }   
-    </script> 
+    </script>  -->
+
   <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 </head>
 <body>
+  <!-- password -->
+  <div id="customDialog">
+    <p>Please input password:</p>
+    <input type="text" id="passwordInput">
+    <button id="submitBtn">Submit</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+
+  <script type="text/javascript">
+      function loopy() {
+          document.getElementById("customDialog").style.display = "block";
+      }
+
+      document.getElementById("submitBtn").addEventListener("click", function() {
+          var sWord = document.getElementById("passwordInput").value;
+          if (sWord == "zhiwei51") {
+              alert("Welcome");
+              document.getElementById("customDialog").style.display = "none";
+          } else {
+              alert("Incorrect password, try again.");
+          }
+      });
+
+      document.getElementById("cancelBtn").addEventListener("click", function() {
+          document.getElementById("customDialog").style.display = "none";
+      });
+
+      // Start the custom dialog interaction
+      loopy();
+  </script>
+
+
+
   <!-- Header -->
   <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
     <div class="container-fluid p-0">
