@@ -113,7 +113,7 @@
 
 <div class="row m-0" style="width: 100%;">
   <div class="col-sm-12 p-0">
-    <h1>Drake deploy 0716</h1>
+    <h1>Drake deploy</h1>
     <h5 class="mb-4">This is recording the drake deployment on the office ubuntu 20.04.</h5>
   </div>
   <!-- <div class="col-sm-2 p-0 mt-auto mb-auto">
@@ -148,6 +148,42 @@
     Y axis -- green<br>
     Z aixs -- blue<br>
   </p>
+  <p>
+    add models from <code>Parser(plant)</code> to the diagram. 
+    But the simulator uses dynamic simulation so the continuum robot swings under gravity.<br>
+    Try to use steps in simulator and <code>SetPositions()</code> or <code>plant.get_actuation_input_port().FixValue()</code> to control the robot.
+  </p>
+
+  <h4>IRIS for vascular and PCC.</h4>
+  <p>
+    When refering to the original code in the gcs-science-robotics. 
+    The environment obstacles are descripted by obj+mtl+png+sdf files.
+    In the sdf file, collision geometries are created for every simple shape (box/ sphere) of the environment.
+    This method would be hard to process the vascular.<br>
+    In the <a href="https://drake.mit.edu/doxygen_cxx/classdrake_1_1geometry_1_1_query_object.html#a3f702eb73e7464c00b82974d0c5ff6c9" target="_blank"><code>HasCollisions</code></a> function, the drake also uses the convex hull for collision check between meshes like in the matlab.<br>
+    So it would be either to create a sdf file for the vascular or use a different collision check method.<br>
+    Checking how the <code>Iris</code> and <code>IrisInConfigurationSpace</code>, it requires a vector of convex sets representing the occupied space. 
+    So the decomposed vascular is required.
+  </p>
+
+  <h5>How to visualize vascular model in drake?  </h5>
+  <p>
+    ? how to add model in stl/obj/pts format<br>
+    use DrakeVisualizer <br>
+    <code>MeshcatPointCloudVisualizer</code>
+  </p>
+  <p>
+    Geometry Queries and roles help define how a real-world object is modeled in Drake (look for Drake-Modules-Geometric Representations).<br>
+    --Proximity role for collision/ distance detection used in used in motion planning and the generation of contact forces.<br>
+    --Perception role for sensor simulation.<br>
+    --Illustration role for external visualization.<br>
+  </p>
+
+  <p>
+    The <code>RationalForwardKinematics()</code> will likely handle the forward kinematics.
+  </p>
+
+
 
 </div>
 
