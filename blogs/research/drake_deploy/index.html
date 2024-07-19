@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Zhiwei Fang | blogs</title>
+  <title>Zhiwei Fang | drake deploy 0716</title>
   <meta name="description" content="Personal website of Zhiwei Fang.">
 
   <!-- Fonts and Icons -->
@@ -14,91 +14,12 @@
   <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/blogs/research/">
+  <link rel="canonical" href="/blogs/research/new/">
 
   <!-- Scripts -->
-  <!-- <script type="text/javascript">   
-    loopy()   
-    function loopy() {   
-    var sWord =""  
-    while (sWord != "zhiwei51") {
-    sWord = prompt("Please input password!")   
-    }   
-    alert("welcome")   
-    }   
-    </script>  -->
-
-    <div id="customDialog" style="display:none;">
-      <p>Please input password!</p>
-      <input type="text" id="passwordInput">
-      <button id="submitBtn">Submit</button>
-      <button id="cancelBtn">Cancel</button>
-    </div>
-
-    <script type="text/javascript">
-      var passwordSubmitted = false; // Flag to track password submission
-  
-      function loopy() {
-          if (!passwordSubmitted) {
-              document.getElementById("customDialog").style.display = "block";
-          }
-      }
-  
-      document.getElementById("submitBtn").addEventListener("click", function() {
-          var sWord = document.getElementById("passwordInput").value;
-          if (sWord == "zhiwei51") {
-              alert("Welcome");
-              document.getElementById("customDialog").style.display = "none";
-              passwordSubmitted = true; // Set flag to true on successful submission
-          } else {
-              alert("Incorrect password, try again.");
-          }
-      });
-  
-      document.getElementById("cancelBtn").addEventListener("click", function() {
-          document.getElementById("customDialog").style.display = "none";
-      });
-      // Start the custom dialog interaction
-      loopy();
-    </script>
-
   <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
 </head>
 <body>
-  <!-- password -->
-  <div id="customDialog">
-    <p>Please input password:</p>
-    <input type="text" id="passwordInput">
-    <button id="submitBtn">Submit</button>
-    <button id="cancelBtn">Cancel</button>
-  </div>
-
-  <script type="text/javascript">
-      function loopy() {
-          document.getElementById("customDialog").style.display = "block";
-      }
-
-      document.getElementById("submitBtn").addEventListener("click", function() {
-          var sWord = document.getElementById("passwordInput").value;
-          if (sWord == "zhiwei51") {
-              alert("Welcome");
-              document.getElementById("customDialog").style.display = "none";
-          } else {
-              alert("Incorrect password, try again.");
-          }
-      });
-
-      document.getElementById("cancelBtn").addEventListener("click", function() {
-          document.getElementById("customDialog").style.display = "none";
-      });
-
-      // Start the custom dialog interaction
-      loopy();
-  </script>
-
-
-
   <!-- Header -->
   <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
     <div class="container-fluid p-0">
@@ -135,6 +56,7 @@
                   <a class="nav-link" href="/projects/">
                     projects
                     
+                    
                   </a>
               </li>
             
@@ -143,8 +65,6 @@
               <li class="nav-item ">
                   <a class="nav-link" href="/publications/">
                     publications
-                    
-                      
                     
                   </a>
               </li>
@@ -157,16 +77,16 @@
                     
                   </a>
               </li>
-            
-          
+
               <li class="nav-item navbar-active font-weight-bold">
                   <a class="nav-link" href="/blogs/">
                     blogs
-
                       <span class="sr-only">(current)</span>
-                    
                   </a>
-              </li>      
+              </li>   
+            
+          
+            
           
         </ul>
       </div>
@@ -181,58 +101,91 @@
   </progress>
 
   <!-- Content -->
-  <!--<div color> for a year's collection-->
-  <!--<li> for new paper card, <div abbr> for the short icon long <div> for paper details-->
   <div class="content">
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb p-0 text-lowercase">
-        <li class="breadcrumb-item"><a href="/">home</a></li>
-        <li class="breadcrumb-item"><a href="/blogs">blogs</a></li>
-        <li class="breadcrumb-item active">life</li>
-      </ol>
-    </nav>
+  <ol class="breadcrumb p-0 text-lowercase">
+    <li class="breadcrumb-item"><a href="/">home</a></li>
+    <li class="breadcrumb-item"><a href="/blogs">blogs</a></li>
+    <li class="breadcrumb-item"><a href="/blogs/research">research</a></li>
+    <li class="breadcrumb-item active">drake deploy</li>
+  </ol>
+</nav>
 
-  <h6>my blogs on life.</h6>
-
-
-
-<!--New item-->
-  <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
-    <div class="col-sm-11 p-0">
-      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
-  <div class="col-sm-1 p-0 abbr">
-    
-      
-        <a class="badge font-weight-bold primary-color-dark align-middle" style="width: 53px;" href="/blogs/life/index.html">
-          life
-        </a>
-        <p>2024-06-11</p>
-    
+<div class="row m-0" style="width: 100%;">
+  <div class="col-sm-12 p-0">
+    <h1>Drake deploy</h1>
+    <h5 class="mb-4">This is recording the drake deployment on the office ubuntu 20.04.</h5>
   </div>
-  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-    
-    <div id="new_blog_test" class="col p-0">
-      <h5 class="title mb-0"><a href="/blogs/life/240611/index.html">Bright night sky from CUHK campus.</a></h5>
-      <div class="preview">
-                 
-              
-        <p>A few pics of the bright night sky shot on my iphone during the spring and early summer.</p>
-
-           
-      </div>
-      
-    </div>
-  </div>
+  <!-- <div class="col-sm-2 p-0 mt-auto mb-auto">
+    <img src="/assets/img/projects/machine_translation/machine_translation.svg" alt="project thumbnail">
+  </div> -->
 </div>
-</li>
-</ol>
-    </div>
-    <div class="col-sm-1 align-self-end mt-2 p-0 pr-1">
-      <h3 class="bibliography-year">2024</h3>
-    </div>
+
+<div class="container-fluid p-0 text-justify">
+  <p>
+    The default python version is 3.8 in ubuntu 20.04, with a default pip version 20.02. The pip drake installation natualy requires pip version>= 20.3.
+    Upgrade pip by <code>python -m pip install --upgrade pip</code>
+  </p>
+
+  <div class="container-fluid p-0 text-justify">
+    It seems that the drake installation in python3.7 doesn't support <code>Parser.AddModelsXX</code>, but only support <code>Parser.AddModelFromFile</code>. The latter function encounter troubles when importing urdf files.
   </div>
 
+  <div class="container-fluid p-0 text-justify">
+    The visualization method <code>RenderDiagram</code> is from another package <code>manipulation</code>. 
+    And the function requires the package installed in at least python>3.8, here I choose python3.10.
+  </div>
 
+  <h4>Setting env for ipynb in vscode</h4>
+  <p>
+    Set venv for the current fold for vscode: go to a python file and choose the env in the right bottom corner by click.<br>
+    Set venv for ipynb: go to the ipynb and the env in the last step is recognized in the slector.
+  </p>
+    
+  <h4>drake simulation and animation</h4>
+  <p> 
+    X axis -- red<br>
+    Y axis -- green<br>
+    Z aixs -- blue<br>
+  </p>
+  <p>
+    add models from <code>Parser(plant)</code> to the diagram. 
+    But the simulator uses dynamic simulation so the continuum robot swings under gravity.<br>
+    Try to use steps in simulator and <code>SetPositions()</code> or <code>plant.get_actuation_input_port().FixValue()</code> to control the robot.
+  </p>
+
+  <h4>IRIS for vascular and PCC.</h4>
+  <p>
+    When refering to the original code in the gcs-science-robotics. 
+    The environment obstacles are descripted by obj+mtl+png+sdf files.
+    In the sdf file, collision geometries are created for every simple shape (box/ sphere) of the environment.
+    This method would be hard to process the vascular.<br>
+    In the <a href="https://drake.mit.edu/doxygen_cxx/classdrake_1_1geometry_1_1_query_object.html#a3f702eb73e7464c00b82974d0c5ff6c9" target="_blank"><code>HasCollisions</code></a> function, the drake also uses the convex hull for collision check between meshes like in the matlab.<br>
+    So it would be either to create a sdf file for the vascular or use a different collision check method.<br>
+    Checking how the <code>Iris</code> and <code>IrisInConfigurationSpace</code>, it requires a vector of convex sets representing the occupied space. 
+    So the decomposed vascular is required.
+  </p>
+
+  <h5>How to visualize vascular model in drake?  </h5>
+  <p>
+    ? how to add model in stl/obj/pts format<br>
+    use DrakeVisualizer <br>
+    <code>MeshcatPointCloudVisualizer</code>
+  </p>
+  <p>
+    Geometry Queries and roles help define how a real-world object is modeled in Drake (look for Drake-Modules-Geometric Representations).<br>
+    --Proximity role for collision/ distance detection used in used in motion planning and the generation of contact forces.<br>
+    --Perception role for sensor simulation.<br>
+    --Illustration role for external visualization.<br>
+  </p>
+
+  <p>
+    The <code>RationalForwardKinematics()</code> will likely handle the forward kinematics.
+  </p>
+
+
+
+</div>
 
   </div>
 
