@@ -166,6 +166,14 @@
     So the decomposed vascular is required.
   </p>
 
+  <h5>IRIS algorithms</h5>
+    <code>IrisInConfigurationSpace()</code> (see gcs-SR) in drake works in the C-space and is actually a variation of the Iris. This function uses nonlinear optimization instead of convex optimization to find collisions in C-space.<br>
+    <code>CspaceFreePolytope()</code> (see C-Iris IJRR) in drake uses polynomial optimization in Hongkai Dai* and Alexandre Amice* and Peter Werner and Annan Zhang and Russ Tedrake, "Certified Polyhedral Decompositions of Collision-Free Configuration Space".<br>
+
+    <a href="https://manipulation.csail.mit.edu/trajectories.html#gcs" target="_blank">ref:</a><br>
+    Using nonlinear programming (NP). In the IRIS-NP algorithm [20] (implemented in Drake), we replace the convex optimization for finding the closest collision with a nonlinear optimization solver like SNOPT. We randomly sample potential collisions in order to make the algorithm probabilistically sound; in practice this algorithm is relatively fast but does not guarantee that the region is completely collision free.<br>
+    Using algebraic kinematics + sums-of-squares optimization. Leveraging the idea that the kinematics of most of our robots can be expressed using (rational) polynomials, we can use tools from polynomial optimization to search for rigorous certificates of non-collision [21] (implemented in Drake). This method tends to be slower, but the results are sound. The one sacrifice that we have to make here is that we find convex regions in the stereographic projection coordinates of the original space. In practice, this represents a slight warping of the coordinate system (and consequently a trajectory length) over the region.<br>
+
   <h5>How to visualize vascular model in drake?  </h5>
   <p>
     ? how to add model in stl/obj/pts format<br>
