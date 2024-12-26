@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Zhiwei Fang | NeuroOCT</title>
+  <title>Zhiwei Fang | NeuroAR</title>
   <meta name="description" content="Personal website of Zhiwei Fang.">
 
   <!-- Fonts and Icons -->
@@ -107,14 +107,14 @@
   <ol class="breadcrumb p-0 text-lowercase">
     <li class="breadcrumb-item"><a href="/">home</a></li>
     <li class="breadcrumb-item"><a href="/projects">projects</a></li>
-    <li class="breadcrumb-item active">NeuroOCT</li>
+    <li class="breadcrumb-item active">NeuroAR</li>
   </ol>
 </nav>
 
 <div class="row m-0" style="width: 100%;">
   <div class="col-sm-12 p-0">
-    <h1>NeuroOCT</h1>
-    <h5 class="mb-4">Robotic Needle Positioning with realtime OCT imaging</h5>
+    <h1>NeuroAR</h1>
+    <h5 class="mb-4"> AR in robotic neurosurgery</h5>
   </div>
   <!-- <div class="col-sm-2 p-0 mt-auto mb-auto">
     <img src="/assets/img/projects/machine_translation/machine_translation.svg" alt="project thumbnail">
@@ -123,22 +123,23 @@
 
 <div class="card">
   <div class="card-body">
-    <h2 style="color: black; font-family: Arial; font-weight: 600;" >Patient-Mounted Neuro Optical Coherence Tomography for Targeted Minimally Invasive Micro-Resolution Volumetric Imaging in Brain In Vivo.</h2>
-    <h4 style="color: #5a6268; font-style: italic;">Advanced Intelligent System, IROS 2024, SPIE 2024</h4>
+    <h2 style="color: black; font-family: Arial; font-weight: 600;" > Robotic Needle Positioning: Learning from Augmented
+      Reality Demonstration of Neuronavigation and Planning.</h2>
+    <h4 style="color: #5a6268; font-style: italic;">ICRA 2025(under review)</h4>
     <hr>
-    <h5 class="card-subtitle mb-2 " style="color: #0a6dde;">Chao Xu<sup>+</sup>, Zhiwei Fang<sup>+</sup>, Huxin Gao, Tinghua Zhang, Tao Zhang, Peng Liu, Hongliang Ren*, and Wu Yuan*.</h5>
+    <!-- <h5 class="card-subtitle mb-2 " style="color: #0a6dde;">Chao Xu<sup>+</sup>, Zhiwei Fang<sup>+</sup>, Huxin Gao, Tinghua Zhang, Tao Zhang, Peng Liu, Hongliang Ren*, and Wu Yuan*.</h5> -->
     <br>
 
     <div class="row justify-content-center">
       <div class="column">
-        <a class="btn btn-large btn-light" href="https://onlinelibrary.wiley.com/doi/10.1002/aisy.202400488" role="button" target="_blank">
+        <a class="btn btn-large btn-light" href="" role="button" target="_blank">
           <i class="fa fa-file">
             Paper
           </i> 
         </a>
       </div>
       <div class="column">
-        <a class="btn btn-large btn-light" href="https://youtu.be/x4jDbBfuOWU" role="button" target="_blank">
+        <a class="btn btn-large btn-light" href="https://youtu.be/DzP5vyMd8xY" role="button" target="_blank">
           <i class="fa fa-desktop">
             Video
           </i> 
@@ -165,14 +166,13 @@
 
         <p class="text-left">
           <!-- In this paper, we present a novel diffusion model called SyncDreamer that generates multiview-consistent images from a single-view image. Using pretrained large-scale 2D diffusion models, recent work Zero123 demonstrates the ability to generate plausible novel views from a single-view image of an object. However, maintaining consistency in geometry and colors for the generated images remains a challenge. To address this issue, we propose a synchronized multiview diffusion model that models the joint probability distribution of multiview images, enabling the generation of multiview-consistent images in a single reverse process. SyncDreamer synchronizes the intermediate states of all the generated images at every step of the reverse process through a 3D-aware feature attention mechanism that correlates the corresponding features across different views. Experiments show that SyncDreamer generates images with high consistency across different views, thus making it well-suited for various 3D generation tasks such as novel-view-synthesis, text-to-3D, and image-to-3D. -->
-          Targeted neuroimaging plays a vital role in evaluating pathologies and guiding interventions in deep brain regions, such as biopsy, laser ablation, and deep brain stimulation. However, current neuroimaging techniques face several challenges when it comes to imaging the deep brain. These challenges include limited imaging depth, a narrow field of view, low resolution, and a lack of real-time imaging and stereotactic deployment capabilities. 
+          Robotic needle positioning tasks in neurosurgery often face challenges due to insufficient perception of planar guidance images during surgery. In this work, we propose an Augmented Reality (AR) interface to help perform the robotic needle positioning tasks by learning from demonstration (LfD). Enhanced immersion in the workflow is achieved by displaying surgical scenes and calculated navigation information. 
           <br>
-          To address these challenges, a patient-mounted neuro optical coherence tomography (neuroOCT) system that combines a lightweight 5 degrees-of-freedom skull-mounted robot (Skullbot) with a neuroendoscope measuring ≈0.6 mm in diameter is introduced. This innovative system enables targeted and minimally invasive neuroimaging with an axial resolution of ≈2.4 μm and a transverse resolution of around 4.5 μm. The Skullbot can be securely attached to the head and precisely deploys the neuroendoscope with an accuracy of ±1.5 mm in the transverse direction and ±0.25 mm in the longitudinal direction. This allows for motion-insensitive stereotactic imaging within the brain. By utilizing the neuroOCT system, targeted imaging of a tumor in a brain phantom is successfully demonstrated. Furthermore, the system's capability for in vivo micro-resolution volumetric neuroimaging of fine structures within a mouse brain is validated.        </p>
-
+          The framework utilizes mixed interactive interfaces in virtual and real environments, enhancing demonstration efficiency and quality. A head-mounted display and an optical tracking system are utilized to perform the visualization and needle tracking. Gaussian Mixture Model (GMM) and Gaussian Mixture Re- gression (GMR) are employed to learn a robust and smooth trajectory policy from the demonstration. Robot reproduction experiments on the needle positioning task achieved an error of 0.6 mm in the final position and an average error of 1.07 mm during the trajectory. Comparative user studies with haptic device-based teleoperation exhibit a low time cost of 62.76 s and reduced workload of the proposed system.
         
         <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/x4jDbBfuOWU?si=haA4B9bnlJ6d8cNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
-
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DzP5vyMd8xY?si=Ditr4Jn8kdgUvB-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       <p class="text-center">
         <!-- Reverse process of SyncDreamer's multiview diffusion. -->
         <!-- Sampled realistic endoscopy videos by <i>Endora</i>.  -->
@@ -187,7 +187,7 @@
 
 
 
-<div class="container">
+<!-- <div class="container">
   <div class="row ">
     <div class="col-12">
         <h3>Citation</h3>
@@ -207,7 +207,7 @@
         <hr>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
