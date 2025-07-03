@@ -129,20 +129,20 @@
     <br>
 
     <div class="row justify-content-center">
-      <div class="column">
+      <!-- <div class="column">
         <a class="btn btn-large btn-light" href="" role="button" target="_blank">
           <i class="fa fa-file">
             Paper
           </i> 
         </a>
-      </div>
-      <div class="column">
+      </div> -->
+      <!-- <div class="column">
         <a class="btn btn-large btn-light" href="https://youtu.be/DzP5vyMd8xY" role="button" target="_blank">
           <i class="fa fa-desktop">
             Video
           </i> 
         </a>
-      </div>
+      </div> -->
     </div>
   
   </div>
@@ -164,13 +164,17 @@
 
         <p class="text-left">
           <!-- In this paper, we present a novel diffusion model called SyncDreamer that generates multiview-consistent images from a single-view image. Using pretrained large-scale 2D diffusion models, recent work Zero123 demonstrates the ability to generate plausible novel views from a single-view image of an object. However, maintaining consistency in geometry and colors for the generated images remains a challenge. To address this issue, we propose a synchronized multiview diffusion model that models the joint probability distribution of multiview images, enabling the generation of multiview-consistent images in a single reverse process. SyncDreamer synchronizes the intermediate states of all the generated images at every step of the reverse process through a 3D-aware feature attention mechanism that correlates the corresponding features across different views. Experiments show that SyncDreamer generates images with high consistency across different views, thus making it well-suited for various 3D generation tasks such as novel-view-synthesis, text-to-3D, and image-to-3D. -->
-          Robotic needle positioning tasks in neurosurgery often face challenges due to insufficient perception of planar guidance images during surgery. In this work, we propose an Augmented Reality (AR) interface to help perform the robotic needle positioning tasks by learning from demonstration (LfD). Enhanced immersion in the workflow is achieved by displaying surgical scenes and calculated navigation information. 
+          Bionic robots have long been a research hotspot in the field of robotics, with particular attention given to legged bionic robots that mimic humans or animals. Animals are capable of agile movement in complex and unknown terrains through the coordinated function of muscles and tendons at their leg joints. However, it is difficult for legged robots to achieve the same level of sophisticated and intricate actuation design. Thus, it is highly challenging to use simpler and more direct actuators to achieve legged motion with comparable dynamic performance.
           <br>
-          The framework utilizes mixed interactive interfaces in virtual and real environments, enhancing demonstration efficiency and quality. A head-mounted display and an optical tracking system are utilized to perform the visualization and needle tracking. Gaussian Mixture Model (GMM) and Gaussian Mixture Re- gression (GMR) are employed to learn a robust and smooth trajectory policy from the demonstration. Robot reproduction experiments on the needle positioning task achieved an error of 0.6 mm in the final position and an average error of 1.07 mm during the trajectory. Comparative user studies with haptic device-based teleoperation exhibit a low time cost of 62.76 s and reduced workload of the proposed system.
+          This project starts from the dynamic model of a two-segment leg and establishes a numerical simulation platform in MATLAB, enabling the simulation of two-segment leg movements in a virtual environment. The functions of muscles and tendons are decomposed using drive motors. Then, nonlinear programming tools are used to quickly optimize the force trajectories of the muscles, which are implemented in motor space. This allows for precise control of the jumping height of the two-segment leg under varying mass loads.
+          <br>
+          Leveraging the inherent stability of the segmented leg model and the functional decomposition of the motors, the system achieves more robust sagittal plane legged motion. Based on the theoretical analysis and experimental foundation established in the one-dimensional context, there is promising potential to extend the rapid optimization control approach of the two-segment leg model to two-dimensional motion, and further realize motion control of multi-legged robots in complex terrain.
+
+
         
-        <div class="video-container">
+        <!-- <div class="video-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/DzP5vyMd8xY?si=Ditr4Jn8kdgUvB-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        </div> -->
       <p class="text-center">
         <!-- Reverse process of SyncDreamer's multiview diffusion. -->
         <!-- Sampled realistic endoscopy videos by <i>Endora</i>.  -->
